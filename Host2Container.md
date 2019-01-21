@@ -4,7 +4,7 @@
     sudo netstat -tulpn | grep :80
     docker container stop my_nginx
 ### [open port]
-    - centos
+    - centos[https://stackoverflow.com/questions/19034542/how-to-open-port-in-centos]
     systemctl status firewalld -l
     systemctl enable firewalld
     systemctl start firewalld
