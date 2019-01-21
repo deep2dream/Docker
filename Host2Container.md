@@ -5,7 +5,8 @@
     docker container stop my_nginx
 ### open port
     - [127.0.0.1 > 0.0.0.0](https://serverfault.com/questions/78048/whats-the-difference-between-ip-address-0-0-0-0-and-127-0-0-1)
-    owt --rpc
+    owt --rpc --rpccorsdomain "http://192.168.10.79:8000"
+    http-server ./app -a 0.0.0.0 -p 8000 -c-1
     - [centos](https://stackoverflow.com/questions/19034542/how-to-open-port-in-centos)
     systemctl status firewalld -l
     systemctl enable firewalld
