@@ -46,6 +46,7 @@
     ubuntu$ docker logout
 ### [Python3.6](http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/)
     NEVER UNINSTALL PYTHON3.5. OR YOU WILL MAKE CHAOS.
+    root@ apt install software-properties-common
     root@ add-apt-repository ppa:jonathonf/python-3.6
     root@ apt-get update
     root@ apt-get install python3.6
