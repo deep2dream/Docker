@@ -8,7 +8,7 @@
     root@ exit
     
     save image
-    ubuntu$ sudo docker commit -m "Added WaltChain Server" -a "NAME" waltchain-server falcon0125/waltchain-server:latest
+    ubuntu$ sudo docker commit -m "Added WaltChain Server" -a "NAME" waltchain-server falcon/waltchain-server:latest
     
     run without save
     ubuntu@ sudo docker run -it frank/waltchain-server bash
@@ -40,9 +40,9 @@
     ubuntu$ sudo docker cp -a waltchain-server:/root/data /tmp
     
     [Access Hub/Upload Image]
-    ubuntu$ sudo docker commit -m "Added WaltChain Server" -a "NAME" waltchain-server falcon0125/waltchain-server:latest
+    ubuntu$ sudo docker commit -m "Added WaltChain Server" -a "NAME" waltchain-server falcon/waltchain-server:latest
     ubuntu$ docker login
-    ubuntu$ docker push falcon0125/waltchain-server
+    ubuntu$ docker push falcon/waltchain-server
     ubuntu$ docker logout
 ### [Python3.6](http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/)
     NEVER UNINSTALL PYTHON3.5. OR YOU WILL MAKE CHAOS.
