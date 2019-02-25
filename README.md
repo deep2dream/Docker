@@ -1,5 +1,8 @@
 ### [Installation](https://github.com/gustavkkk/blockchain/blob/master/Exchange/Docker.md#install-ubuntu)
 ### [B@s!c Comm@nds](https://hub.docker.com)
+    privilege
+    sudo usermod -aG docker ${USER}
+
     initial
     ubuntu@ sudo docker pull ubuntu:16.04
     ubuntu@ sudo docker run --name waltchain-server -it ubuntu:16.04 bash
