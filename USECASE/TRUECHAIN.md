@@ -13,7 +13,10 @@
     bftip4='172.17.0.6'
 ### START BOOTNODE
     ubuntu@ sudo docker run --name truechain-dev -it falcon0125/truechain-dev:latest
-    root@ truepub
+    root@ echo 'truedir=$HOME/.truechain' >> ~/.profile
+    root@ echo "alias truedel='rm -rf $truedir '" >> ~/.profile
+    root@ source ~/.bashrc
+    # root@ truepub?
     root@ truedel
     root@ mkdir $truedir
     root@ bootnodegen
