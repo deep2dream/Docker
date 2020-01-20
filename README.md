@@ -26,11 +26,18 @@
     ubuntu@ sudo docker ps
 
     export & import
+    [container]
+    ubuntu@ sudo docker ps -a
     ubuntu@ sudo docker export waltchain-server > waltchain-server.tar.gz
     ubuntu@ sudo docker export NAME | gzip > NAME.gz
     ubuntu@ sudo scp NAME.gz USERNAME@SERVER_IP:/home/USERNAME
     ubuntu@ sudo zcat NAME.gz | docker import - NAME
     ubuntu@ sudo docker run -i -t NAME /bin/bash
+    [images]
+    ubuntu@ sudo docker images
+    ubuntu@ sudo docker commit 3a09b2588478 mynewimage 4d2eab1c0b9a13c83abd72b38e5d4b4315de3c9967165f78a7b817ca99bf191e
+    ubuntu@ sudo docker save mynewimage > /tmp/mynewimage.tar
+    ubuntu@ sudo docker load < /tmp/mynewimage.tar
 
     info
     ubuntu@ sudo docker ps
