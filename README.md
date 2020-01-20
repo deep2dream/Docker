@@ -27,6 +27,10 @@
 
     export & import
     ubuntu@ sudo docker export waltchain-server > waltchain-server.tar.gz
+    ubuntu@ sudo docker export NAME | gzip > NAME.gz
+    ubuntu@ sudo scp NAME.gz USERNAME@SERVER_IP:/home/USERNAME
+    ubuntu@ sudo zcat NAME.gz | docker import - NAME
+    ubuntu@ sudo docker run -i -t NAME /bin/bash
 
     info
     ubuntu@ sudo docker ps
