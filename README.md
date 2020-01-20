@@ -38,6 +38,7 @@
     ubuntu@ sudo docker commit 3a09b2588478 mynewimage 4d2eab1c0b9a13c83abd72b38e5d4b4315de3c9967165f78a7b817ca99bf191e
     ubuntu@ sudo docker save mynewimage > /tmp/mynewimage.tar
     ubuntu@ sudo docker load < /tmp/mynewimage.tar
+    ubuntu@ sudo docker import /tmp/mynewimage.tar
 
     info
     ubuntu@ sudo docker ps
