@@ -1,7 +1,12 @@
 ### [Installation](https://github.com/gustavkkk/blockchain/blob/master/Exchange/Docker.md#install-ubuntu)
 ### [B@s!c Comm@nds](https://hub.docker.com)
-    privilege
+    [privilege]
+    sudo groupadd docker
     sudo usermod -aG docker ${USER}
+    sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+    sudo chmod g+rwx "$HOME/.docker" -R
+    sudo systemctl restart docker
+    sudo chmod 666 /var/run/docker.sock
 
     initial
     ubuntu@ sudo docker pull ubuntu:16.04
