@@ -1,8 +1,12 @@
 ### [Installation](https://github.com/gustavkkk/blockchain/blob/master/Exchange/Docker.md#install-ubuntu)
+```
+sudo snap install docker
+sudo snap start docker
+```
 ### [B@s!c Comm@nds](https://hub.docker.com)
     [privilege]
     sudo groupadd docker
-    sudo usermod -aG docker ${USER}
+    sudo usermod -aG docker $USER
     sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
     sudo chmod g+rwx "$HOME/.docker" -R
     sudo systemctl restart docker
